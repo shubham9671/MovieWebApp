@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+<div class="container">
+	<div class="row">
+		<% if(data.length) { %>
+	        <% data.forEach(function(movie){ %>
+	            <div class="col-md-3 m-3 p-3">
+					<p>
+						<a href='https://www.imdb.com/title/<%= movie.imdbID %>'><img class="poster" src='<%= movie.Poster %>'></a>
+					</p>
+					<h3 style="font-size: 18px;"><a href='https://www.imdb.com/title/<%= movie.imdbID %>'><%= movie.Title %></a></h3>
+					<p><i style="font-size:14px,bold"><%= movie.Year %></i></p>
+				</div>
+	        <% }); %>
+    	<% } %>
+    </div>
+</div>
+
+<% include partials/footer %>
