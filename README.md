@@ -3,5 +3,4 @@
 To run the application :-
 
 1.npm i 
-
-2. npm start
+2.npm start
